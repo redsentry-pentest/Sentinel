@@ -20,7 +20,10 @@ It performs lightweight, contextual checks against a target web application and 
 
 ---
 
-## 🚀 Quick Start
+## ▶️ Usage
+```
+python3 sentinel.py https://target.com
+```
 
 ### 🐍 Requirements
 
@@ -28,3 +31,12 @@ Install dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
+## 📜 License 
+This project is licensed under the MIT License
+You can use, modify, and share this tool freely--just retain credit to the author. 
+
+## Author
+Jake Boren
+Cybersecurity Engineer | Offensive Security
+LinkedIn: https://www.linkedin.com/in/jacob-boren-1337-/
