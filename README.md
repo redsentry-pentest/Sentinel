@@ -1,26 +1,30 @@
-# Sentinel
-Python Script for Automating 8 Most Common Findings Across Web-Application &amp; External Tests
 # 🛡️ Sentinel - Passive Recon Scanner
 
-**Sentinel** is a Python-based passive reconnaissance scanner designed to streamline early-stage web application assessments. Built for pentesters, red-teamers, and security engineers, Sentinel provides lightweight, no-auth checks to quickly surface misconfigurations, weak headers, outdated components, and potential injection points.
+**Sentinel** is a Python-based passive reconnaissance scanner designed for penetration testers and security engineers who want quick visibility into common misconfigurations and weak points—without authentication or intrusive scanning.
+
+It performs lightweight, contextual checks against a target web application and outputs a clean JSON report for triage, escalation, or inclusion in findings.
 
 ---
 
 ## 🔧 Features
 
-- ✅ Missing Security Headers Detection
-- 🔐 TLS Configuration & Cipher Suite Enumeration (nmap integration)
-- 🧱 Backend Fingerprinting (Server, X-Powered-By, Cookies)
-- 🧪 Reflected Injection Testing with Context Analysis
-- 🔍 Sensitive Data Exposure (e.g. API keys, tokens, secrets)
-- 🧠 Outdated Front-End Library Detection
-- 🔓 Authentication Enumeration Differentiation
-- 🚦 Rate Limiting Evaluation (POST to login paths)
-- 📄 JSON Report Output with Rich Contextual Data
+- 🔒 **Missing Security Headers** detection
+- 🔐 **TLS Misconfiguration & Cipher Suite Analysis** (via `nmap`)
+- 🧱 **Backend Fingerprinting** (headers, cookies, server tech)
+- 🧪 **Injection Point Detection** (reflected inputs + context type)
+- 🔍 **Sensitive Data Exposure** (API keys, tokens, secrets)
+- 📦 **Outdated JS/CSS/Meta Components**
+- 🔓 **Auth Enumeration Detection** (differentiated error behavior)
+- 🚦 **Rate Limiting Weaknesses**
+- 🧠 **Contextual Snippets** and exact endpoints included in report
 
 ---
 
-## 🖥️ Usage
+## 🚀 Quick Start
+
+### 🐍 Requirements
+
+Install dependencies:
 
 ```bash
-python3 sentinel.py https://target.com
+pip install -r requirements.txt
